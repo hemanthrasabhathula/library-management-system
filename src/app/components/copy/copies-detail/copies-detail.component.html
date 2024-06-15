@@ -1,0 +1,45 @@
+<!-- <div>
+    <h2>Copies Details</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <mat-card class="copy-card">
+          <mat-card-header>
+            <div mat-card-avatar class="copy-image" [style.background-image]=""></div>
+            <mat-card-title>{{ copy.title }}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image [src]="" alt="Photo of {{ copy.title }}">
+          <mat-card-content>
+            <p>{{ copy.title }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="card-details-container">
+    <div>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ copy.title }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="" alt="Photo of {{ copy.title }}">
+        <mat-card-content>
+          <p>{{ copy.title }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <!-- Details on the right -->
+    <div class="details-container">
+      <h3>Title: {{ copy.title }}</h3>
+      <p>Author: {{ copy.author }}</p>
+      <p>Genre: {{ copy.genre }}</p>
+      <p>ISBN: {{ copy.ISBN }}</p>
+      <p>status: {{ copy.status}}</p>
+      <div *ngFor="let copy of copies">
+        <p>Branch: {{ copy.branch_info.name }}</p>
+    </div>
+      <!-- Add more details as needed -->
+    </div>
+    
+  </div>

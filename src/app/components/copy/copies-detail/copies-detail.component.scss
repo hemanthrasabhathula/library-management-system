@@ -1,0 +1,33 @@
+.card-container {
+    margin-right: 20px; /* Adds some space between the card and the details */
+  }
+  
+.mat-card {
+    width: calc((100vw / 3)/2); /* Example: 1/3 of the viewport width, then halved */
+    height: calc((100vw / 3)); /* Maintains a 1:2 width to height ratio */
+    max-width: 400px; /* Ensures the card does not grow too large */
+    max-height: 200px; /* Based on the max-width to maintain the ratio */
+    margin: auto; /* Center the card in the flex container */
+  }
+  
+  .card-details-container {
+    display: flex;
+    justify-content: center; /* Centers the children (card and details) horizontally */
+    align-items: start; /* Aligns items to the top */
+    margin: auto; /* Centers the flex container horizontally in its parent */
+    max-width: 90%; /* Prevents the container from stretching too wide on larger screens */
+    padding-top: 5%;
+}
+  
+  .details-container {
+    padding-left: 20px; /* Adds some space between the card and the details */
+  }
+  
+  /* Additional styles for vertical centering if .card-details-container is a direct child of the body or a full-screen container */
+  body, html {
+    height: 100%; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers the content vertically */
+    margin: 0; /* Removes default margin */
+  }

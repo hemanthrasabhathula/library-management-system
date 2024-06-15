@@ -1,0 +1,24 @@
+.global-header {
+    background-color: rgb(0, 42, 147); /* Light blue background */
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    margin: 8px; /* Adjust based on your layout needs */
+  }
+
+/* Global styles.scss */
+body {
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    margin: 8px; /* Adjust based on your layout needs */
+    padding: 20px; /* Adjust the padding value as needed */
+  }
+  
+  .main-container {
+    padding: 20px; /* Adjust the padding value as needed */
+  }
+  :host {
+    display: block; /* Ensures the :host element is block-level for padding to take effect */
+    padding: 20px; /* Adjust the padding value as needed */
+  }

@@ -1,0 +1,17 @@
+<div>
+  <h2>Copies</h2>
+  <div class="grid-container">
+    <div *ngFor="let copy of copies" class="grid-item">
+      <mat-card class="copy-card" (click)="navigateTo(copy)">
+        <mat-card-header>
+          <div mat-card-avatar class="copy-image" [style.background-image]=""></div>
+          <mat-card-title>{{ copy.title }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="" alt="Photo of {{ copy.title }}">
+        <mat-card-content>
+          <p>{{ copy.title }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
